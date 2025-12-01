@@ -37,7 +37,7 @@ public class telaCaminhao extends JFrame {
     //Seção de orçamento
     add(new JLabel("--- CÁLCULO POR ORÇAMENTO ---"));
     add(new JLabel(""));
-    
+
     add(new JLabel("Valor disponível (R$):"));
     txtOrcamento = new JTextField();
     add(txtOrcamento);
@@ -53,6 +53,8 @@ public class telaCaminhao extends JFrame {
     lblResultadoPreco = new JLabel("Preço Total: R$ 0.00");
     add(lblResultadoPreco);
     add(new JLabel(""));
+
+    // Código de Luana: Onde os botões e eventos são adicionados
    }
   
 
