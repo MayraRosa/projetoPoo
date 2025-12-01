@@ -20,6 +20,21 @@ public class telaCaminhao extends JFrame {
      // Componentes de divisão e título
      add(new JLabel("--- DIMENSÕES DO BAÚ ---"));
      add(new JLabel(""));
+
+     // Seção de Dimensões (Entrada de largura, comprimento e altura)
+     add(new JLabel("Comprimento (m):"));
+     txtComprimento = new JTextField();
+     add(txtComprimento);
+
+     add(new JLabel("Largura (m):"));
+     txtLargura = new JTextField();
+     add(txtLargura);
+
+     add(new JLabel("Altura (m):"));
+     txtAltura = new JTextField();
+     add(txtAltura);
+
+
    }
   
 
