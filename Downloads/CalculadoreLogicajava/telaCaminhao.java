@@ -3,11 +3,20 @@ import javax.swing.SwingUtilities;
 
 public class telaCaminhao extends JFrame {
 
+  private JTextField txtComprimento;
+  private JTextField txtLargura;
+  private JTextField txtAltura;
+  private JTextField xtxOrcamento;
+  
+  private JLabel lblResultadoVolume;
+  private JLabel lblResultadoPreco;
+
    public telaCaminhao() {
      setTitle("Tela Caminhão");
      setSize(400, 300);
      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
      setLocationRelativeTo(null);
+
    }
   
 
