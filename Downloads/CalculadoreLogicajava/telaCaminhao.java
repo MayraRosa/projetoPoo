@@ -17,6 +17,9 @@ public class telaCaminhao extends JFrame {
      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
      setLocationRelativeTo(null);
 
+     // Componentes de divisão e título
+     add(new JLabel("--- DIMENSÕES DO BAÚ ---"));
+     add(new JLabel(""));
    }
   
 
