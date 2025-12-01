@@ -6,7 +6,7 @@ public class telaCaminhao extends JFrame {
   private JTextField txtComprimento;
   private JTextField txtLargura;
   private JTextField txtAltura;
-  private JTextField xtxOrcamento;
+  private JTextField xtxOrcamento; //Cálculo inverso
   
   private JLabel lblResultadoVolume;
   private JLabel lblResultadoPreco;
@@ -34,7 +34,12 @@ public class telaCaminhao extends JFrame {
      txtAltura = new JTextField();
      add(txtAltura);
 
-
+    //Seção de orçamento
+    add(new JLabel("--- CÁLCULO POR ORÇAMENTO ---"));
+    add(new JLabel(""));
+    add(new JLabel("Valor disponível (R$):"));
+    txtOrcamento = new JTextField();
+    add(txtOrcamento);
    }
   
 
