@@ -37,9 +37,22 @@ public class telaCaminhao extends JFrame {
     //Seção de orçamento
     add(new JLabel("--- CÁLCULO POR ORÇAMENTO ---"));
     add(new JLabel(""));
+    
     add(new JLabel("Valor disponível (R$):"));
     txtOrcamento = new JTextField();
     add(txtOrcamento);
+
+    //Seção de resultados (saídas do volume e preço)
+    add(new JLabel("--- RESULTADOS ---"));
+    add(new JLabel(""));
+
+    lblResultadoVolume = new JLabel("Volume Total: 0.00 m³");
+    add(lblResultadoVolume);
+    add(new JLabel(""));
+
+    lblResultadoPreco = new JLabel("Preço Total: R$ 0.00");
+    add(lblResultadoPreco);
+    add(new JLabel(""));
    }
   
 
