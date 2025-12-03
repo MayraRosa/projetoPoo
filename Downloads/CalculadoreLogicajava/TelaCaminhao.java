@@ -107,7 +107,12 @@ public class TelaCaminhao extends JFrame {
                 // 3. Devolve para a tela
                 lblResultadoVolume.setText(String.format("Volume Total: %.2f m³", volume));
                 lblResultadoPreco.setText(String.format("Preço Total: R$ %.2f", preco));
-  
+              } catch (NumberFormatException erro) {
+                // 4. Trata erros
+                JOptionPane.showMessageDialog(null, "Por favor, digite apenas números válidos.");
+            }
+        }
+    });
 
   public static void main(String[] args) {
       SwingUtilities.invokeLater(() -> {
