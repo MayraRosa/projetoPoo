@@ -82,7 +82,7 @@ public class TelaCaminhao extends JFrame {
     btnCalcular.setBackground(corDestaque);
     btnCalcular.setForeground(Color.WHITE);
     btnCalcular.setFont(fonteNegrito);
-    add(btnCalcular); // Adiciona na tela  }
+    add(btnCalcular); // Adiciona na tela  
 
     // Botão Secundário (Orçamento)
     JButton btnOrcamento = new JButton("Verificar Orçamento");
@@ -135,6 +135,7 @@ public class TelaCaminhao extends JFrame {
         }
     });
 
+  }
   public static void main(String[] args) {
       SwingUtilities.invokeLater(() -> {
         TelaCaminhao tela = new TelaCaminhao();
