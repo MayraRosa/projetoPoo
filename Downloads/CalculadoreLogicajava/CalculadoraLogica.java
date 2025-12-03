@@ -25,7 +25,11 @@ public class CalculadoraLogica {
         /*calculo do valor */
         double valorTotal = volume * PRECO_POR_METRO;
 
+        System.out.println("\n=== Resultado ===");
+        System.out.println("Volume total: " + df.format(volume) + " m³");
+        System.out.println("Valor total da carga: R$ " + df.format(valorTotal));
 
+        input.close();
 
     }
 }
