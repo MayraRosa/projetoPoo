@@ -114,6 +114,27 @@ public class TelaCaminhao extends JFrame {
         }
     });
 
+    // --- PASSO 3: EVENTO DE ORÇAMENTO ---
+    btnOrcamento.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                // Pega o valor que o usuário tem
+                double dinheiro = Double.parseDouble(txtOrcamento.getText().replace(",", "."));
+                
+                // Faz a conta inversa (regra de 3 com o preço da Pessoa 3)
+                double volumePossivel = dinheiro / 53.39;
+
+                // Mostra o resultado
+                JOptionPane.showMessageDialog(null, 
+                    String.format("Com R$ %.2f você consegue comprar %.2f m³ de areia.", dinheiro, volumePossivel));
+
+            } catch (Exception erro) {
+                JOptionPane.showMessageDialog(null, "Erro: Verifique o valor do orçamento.");
+            }
+        }
+    });
+
   public static void main(String[] args) {
       SwingUtilities.invokeLater(() -> {
         TelaCaminhao tela = new TelaCaminhao();
