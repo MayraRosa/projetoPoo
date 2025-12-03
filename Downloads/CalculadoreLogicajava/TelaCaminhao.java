@@ -4,6 +4,8 @@ import javax.swing.border.EmptyBorder;
 // dois imports adicionados:
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+//adicionando mais um import
+import java.text.DecimalFormat;
 
 public class TelaCaminhao extends JFrame {
 
@@ -14,6 +16,9 @@ public class TelaCaminhao extends JFrame {
   
   private JLabel lblResultadoVolume;
   private JLabel lblResultadoPreco;
+
+  //constante de loh (pessoa 3)
+  private final double PRECO_POR_METRO = 53.39;
 
   public TelaCaminhao() {
     setTitle("Calculadora de Carga de Areia");
@@ -95,6 +100,9 @@ public class TelaCaminhao extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
+
+                //formatação igual de loh
+                DecimalFormat df = new DecimalFormat("0.00");
                 // 1. Pega os dados da tela (Pessoa 2)
                 double comp = Double.parseDouble(txtComprimento.getText().replace(",", "."));
                 double larg = Double.parseDouble(txtLargura.getText().replace(",", "."));
@@ -102,11 +110,11 @@ public class TelaCaminhao extends JFrame {
 
                 // 2. Manda para a matemática (Pessoa 3)
                 double volume = comp * larg * alt;
-                double preco = volume * 53.39; // Preço fixo da lógica recebida
+                double preco = volume * PRECO_POR_METRO; // Preço fixo da lógica recebida
 
                 // 3. Devolve para a tela
-                lblResultadoVolume.setText(String.format("Volume Total: %.2f m³", volume));
-                lblResultadoPreco.setText(String.format("Preço Total: R$ %.2f", preco));
+                lblResultadoVolume.setText(String.format("Volume Total:" + df.format(volume) + " m³"));
+                lblResultadoPreco.setText(String.format("Preço Total: R$ " + df.format(preco)));
               } catch (NumberFormatException erro) {
                 // 4. Trata erros
                 JOptionPane.showMessageDialog(null, "Por favor, digite apenas números válidos.");
@@ -119,15 +127,17 @@ public class TelaCaminhao extends JFrame {
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
+                DecimalFormat df = new DecimalFormat("0.00");
                 // Pega o valor que o usuário tem
                 double dinheiro = Double.parseDouble(txtOrcamento.getText().replace(",", "."));
                 
                 // Faz a conta inversa (regra de 3 com o preço da Pessoa 3)
-                double volumePossivel = dinheiro / 53.39;
+                double volumePossivel = dinheiro / PRECO_POR_METRO;
 
                 // Mostra o resultado
-                JOptionPane.showMessageDialog(null, 
-                    String.format("Com R$ %.2f você consegue comprar %.2f m³ de areia.", dinheiro, volumePossivel));
+                JOptionPane.showMessageDialog(null,
+                    "Com R$ " + df.format(dinheiro) +
+                    " você consegue comprar " + df.format(volumePossivel) + " m³ de areia.");
 
             } catch (Exception erro) {
                 JOptionPane.showMessageDialog(null, "Erro: Verifique o valor do orçamento.");
