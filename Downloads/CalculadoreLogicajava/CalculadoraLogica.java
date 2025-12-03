@@ -20,6 +20,9 @@ public class CalculadoraLogica {
 
         double volume = comprimento * largura * altura;
 
+        double valorTotal = volume * PRECO_POR_METRO;
+
+
 
     }
 }
