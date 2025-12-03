@@ -1,3 +1,4 @@
+/*estrutura inicial da classe */
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
