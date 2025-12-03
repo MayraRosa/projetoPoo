@@ -10,6 +10,7 @@ public class CalculadoraLogica {
 
         final double PRECO_POR_METRO = 53.39;
 
+       /*entradas de dados */
         System.out.print("Digite o comprimento do baú (m): ");
         double comprimento = input.nextDouble();
 
