@@ -90,6 +90,23 @@ public class TelaCaminhao extends JFrame {
     btnOrcamento.setForeground(Color.WHITE);
     btnOrcamento.setFont(fonteNegrito);
     add(btnOrcamento); // Adiciona na tela
+
+    btnCalcular.addActionListener(new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                // 1. Pega os dados da tela (Pessoa 2)
+                double comp = Double.parseDouble(txtComprimento.getText().replace(",", "."));
+                double larg = Double.parseDouble(txtLargura.getText().replace(",", "."));
+                double alt = Double.parseDouble(txtAltura.getText().replace(",", "."));
+
+                // 2. Manda para a matemática (Pessoa 3)
+                double volume = comp * larg * alt;
+                double preco = volume * 53.39; // Preço fixo da lógica recebida
+
+                // 3. Devolve para a tela
+                lblResultadoVolume.setText(String.format("Volume Total: %.2f m³", volume));
+                lblResultadoPreco.setText(String.format("Preço Total: R$ %.2f", preco));
   
 
   public static void main(String[] args) {
