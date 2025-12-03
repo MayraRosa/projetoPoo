@@ -1,6 +1,9 @@
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.border.EmptyBorder;
+// dois imports adicionados:
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class TelaCaminhao extends JFrame {
 
@@ -74,8 +77,12 @@ public class TelaCaminhao extends JFrame {
     lblResultadoPreco.setForeground(corDestaque);
     add(lblResultadoPreco);
 
-    // Código de Luana: Onde os botões e eventos vão ser adicionados
-  }
+  // Botão Principal
+    JButton btnCalcular = new JButton("Calcular Total");
+    btnCalcular.setBackground(corDestaque);
+    btnCalcular.setForeground(Color.WHITE);
+    btnCalcular.setFont(fonteNegrito);
+    add(btnCalcular); // Adiciona na tela  }
   
 
   public static void main(String[] args) {
