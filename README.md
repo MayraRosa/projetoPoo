@@ -16,3 +16,14 @@ Onde mexe: mexe no arquivo Calculadoralogica.java.
 Pessoa 4: Eventos e botões - Luana:
 Objetivo: Fazer o clique funcionar.
 Onde mexe: No arquivo telaCaminhao.java (depois que Ana clara terminar).
+
+
+FASE 1: A Fundação (Feito pela Pessoa 1)
+
+​Pessoa 1: Cria o repositório no GitHub. ✅️
+
+​Pessoa 1: Cria o arquivo TelaCaminhao.java (vazio, só com a janela básica) e o CalculadoraLogica.java (vazio).  ✅
+
+​Todos: Clonam o repositório (git clone) para seus computadores  ✅
+
+
