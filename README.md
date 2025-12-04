@@ -39,5 +39,18 @@ FASE 3: A União
 
 ​Agora o projeto tem uma tela bonita (mas botões que não funcionam) e uma lógica inteligente (que ninguém está usando). ✅
 
+​FASE 4: A Instalação (Pessoa 4 entra em ação) ✅
+
+​Pessoa 4 (Branch eventos): Baixa o projeto atualizado (git pull). ✅
+
+​Pessoa 4: Abre a TelaCaminhao.java. Agora ele vê os campos da Pessoa 2. ✅
+
+​Pessoa 4: Programa o botão: "Quando clicar, chame a classe da Pessoa 3". ✅
+
+FASE 5: O Polimento Final (Todos, liderados pela Pessoa 1)
+
+​Pessoa 1: Escreve no README.md como usar o programa.✅
+
+​Todos: Testam e corrigem pequenos erros de digitação.✅
 
 
