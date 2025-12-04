@@ -1,12 +1,18 @@
 Pessoa 1: Líder e organização - Mayra:
-objetivo: Garantir que o projeto exista, compile e esteja bem documentado.
-onde mexe: Arquivos Main.java, README.md, gitignore e ajustes gerais da janela.
+Objetivo: Garantir que o projeto exista, compile e esteja bem documentado.
+Onde mexe: Arquivos Main.java, README.md, gitignore e ajustes gerais da janela.
 
 
-pessoa 2: Interface Gráfica - Ana Clara:
+Pessoa 2: Interface Gráfica - Ana Clara:
 Objetivo: criar a "cara" do programa.
-onde mexe: Apenas no arquivo TelaCaminhao.java
+Onde mexe: Apenas no arquivo TelaCaminhao.java.
 
-pessoa 3: Lógica pura - Lohoane
+
+Pessoa 3: Lógica pura - Lohoane:
 Objetivo: Fazer as contas funcionarem isoladamente.
-onde mexe: mexe no arquivo Calculadoralogica.java
+Onde mexe: mexe no arquivo Calculadoralogica.java.
+
+
+Pessoa 4: Eventos e botões - Luana:
+Objetivo: Fazer o clique funcionar.
+Onde mexe: No arquivo telaCaminhao.java (depois que Ana clara terminar).
