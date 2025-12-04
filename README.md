@@ -1,3 +1,38 @@
+Cálculo de Volume de Carga
+
+Aplicação em Java + Swing para calcular o volume do baú de um caminhão e o valor da carga de areia.
+Como executar:
+-Baixe ou clone o projeto.
+-Abra na sua IDE (Eclipse, IntelliJ, NetBeans ou VS Code).
+-Execute a classe principal (Main.java).
+Ou no terminal:
+Javac Main.java
+Java main
+
+Como usar:
+Digite:
+-Comprimento do baú (m)
+-Largura do baú (m)
+-Altura do baú (m)
+-Valor que deseja pagar pela carga
+-Clique no botão Calcular.
+Os resultados aparecerão na área de saída.
+
+O programa calcula:
+-Volume total do baú (m³)
+-Valor total da carga se o baú encher
+-Volume equivalente ao valor informado
+-Percentual de ocupação do baú
+-(Preço do m³: R$ 53,39)
+
+Equipe:
+Mayra Rosa 
+Ana Clara Alves
+Luana de melo 
+Lohoane Hapuque
+
+detalhamento de funções:
+
 Pessoa 1: Líder e organização - Mayra:
 Objetivo: Garantir que o projeto exista, compile e esteja bem documentado.
 Onde mexe: Arquivos Main.java, README.md, gitignore e ajustes gerais da janela.
