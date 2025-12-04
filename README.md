@@ -26,4 +26,10 @@ FASE 1: A Fundação (Feito pela Pessoa 1)
 
 ​Todos: Clonam o repositório (git clone) para seus computadores  ✅
 
+​FASE 2: Trabalho Paralelo (Pessoas 2 e 3 trabalham ao mesmo tempo)
+​Esta é a fase mágica. Como estão mexendo em arquivos ou partes diferentes, não dá conflito.
+
+​Pessoa 2 (Branch design): Começa a adicionar add(new JLabel("Altura")); e add(txtAltura); na TelaCaminhao.  ✅
+
+​Pessoa 3 (Branch logica): Abre o CalculadoraLogica.java e escreve as fórmulas. ✅
 
