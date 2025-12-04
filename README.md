@@ -33,3 +33,11 @@ FASE 1: A Fundação (Feito pela Pessoa 1)
 
 ​Pessoa 3 (Branch logica): Abre o CalculadoraLogica.java e escreve as fórmulas. ✅
 
+FASE 3: A União
+
+​Pessoas 2 e 3: Sobem seus códigos (git push). ✅
+
+​Agora o projeto tem uma tela bonita (mas botões que não funcionam) e uma lógica inteligente (que ninguém está usando). ✅
+
+
+
